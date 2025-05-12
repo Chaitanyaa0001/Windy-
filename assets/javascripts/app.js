@@ -16,7 +16,6 @@ function initEvents() {
     const footer = document.querySelector("footer");
 
 
-
     let location;
 
     locationText.addEventListener("submit", (e) => {
@@ -26,10 +25,7 @@ function initEvents() {
         getNewDelhiState();
         getMumbaiState();
         getKolkataState();
-
         document.querySelector('.weather-container').style.display = 'flex';
-
-
     });
 
     const getWeather = async () => {
@@ -88,9 +84,6 @@ function initEvents() {
 
     footer.classList.add("show");
 
-
-
-
 data.forecast.forecastday.forEach((card) => {
     forecastContainer.innerHTML += `
         <div class="forecast-card">
@@ -120,7 +113,6 @@ data.forecast.forecastday.forEach((card) => {
 });
 
     };
-
 
 
     const getNewDelhiState = async () => {
